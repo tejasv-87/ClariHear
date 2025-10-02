@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#F0F4F8"
+    tools:context=".HearingAssistActivity">
+
+    <TextView
+        android:id="@+id/assistTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hearing Assistance"
+        android:textSize="28sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/profileLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Environment Profile:"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/assistTitle"
+        android:layout_marginTop="48dp"/>
+
+    <Spinner
+        android:id="@+id/profileSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/profileLabel"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_rounded_white"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"/>
+
+    <ToggleButton
+        android:id="@+id/assistToggleButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:textOn=""
+        android:textOff=""
+        android:background="@drawable/ic_launcher_background"
+        android:layout_marginTop="32dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/assistToggleButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/micIndicator"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/mic_active_dot"
+            android:visibility="invisible"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: Assistance OFF"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+</RelativeLayout>

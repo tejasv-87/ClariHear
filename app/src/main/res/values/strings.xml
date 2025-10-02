@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ClariHear</string>
+
+    <string-array name="environment_profiles">
+        <item>Quiet</item>
+        <item>Noisy</item>
+        <item>Outdoor</item>
+        <item>Meeting</item>
+    </string-array>
+</resources>

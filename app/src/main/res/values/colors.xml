@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#00796B</color> <!-- Teal -->
+    <color name="colorPrimaryDark">#004D40</color> <!-- Dark Teal -->
+    <color name="colorAccent">#4DB6AC</color> <!-- Light Teal -->
+    <color name="backgroundColor">#E0F2F1</color> <!-- Very Light Teal/Green -->
+    <color name="buttonTextColor">#FFFFFF</color>
+</resources>
